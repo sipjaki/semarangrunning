@@ -298,7 +298,7 @@
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
     <!-- CARD 1 -->
     <div class="bg-white rounded-xl shadow-md overflow-hidden">
-<div class="relative">
+<div class="relative">\
     <p class="button-maroon">Panduan Pendaftaran !</p>
         <!-- Tombol Mute/Unmute -->
     <button id="toggleSound" class="button-baru"

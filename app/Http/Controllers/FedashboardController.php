@@ -36,8 +36,8 @@ class FedashboardController extends Controller
 
         // return view('frontend.00_full.index', [
         // return view('404', [
-        return view('00_semarang.01_frontend.01_halamanutama.halamanutama', [
-            'title' => 'SNOC X',
+        return view('00_semarang.01_frontend.NEW.01_halamanutama.newhalamanbaru', [
+            'title' => 'Sabhagiriwana17 | Mapala Universitas 17 Agustus 1945 Semarang | UNTAG',
             // 'data' => $data, // Mengirimkan data paginasi ke view
             // 'dataartikel' => $dataartikel, // Mengirimkan data paginasi ke view
             // 'dataheaderberanda' => $dataheaderberanda, // Mengirimkan data paginasi ke view

@@ -16,6 +16,7 @@ use App\Http\Controllers\PbgslfController;
 use App\Http\Controllers\PendataanBangunanGedungController;
 use App\Http\Controllers\PenilikbangunanController;
 use App\Http\Controllers\PerlombaanController;
+use App\Http\Controllers\PublicController;
 use App\Models\gambarbantuan;
 use App\Models\pbgslfbangunan;
 use Illuminate\Support\Facades\Route;
@@ -45,6 +46,7 @@ Route::get('/web', [FedashboardController::class, 'web']);
 // 01_ MENU PBG SLF
 // ----------------------------------------------------------------------------------------
 Route::get('/respbgslfindex', [FedashboardController::class, 'menurespbgslfindex']);
+
 
 // 03_ MENU BANGUNAN GEDUNG ANDROID
 // ----------------------------------------------------------------------------------------
@@ -245,5 +247,11 @@ Route::put('/valberkasusaha/{id}/certificate', [DaftartimController::class, 'upd
 //     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
 //     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 // });
+
+// MENU BARU UNTUK SABHA GIRIWARNA 17
+
+Route::get('/sekapursirih', [PublicController::class, 'sekapursirih'])->name('sekapursirih');
+Route::get('/kepengurusan', [PublicController::class, 'kepengurusan'])->name('kepengurusan');
+
 
 require __DIR__.'/auth.php';
